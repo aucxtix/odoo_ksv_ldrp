@@ -271,17 +271,50 @@
       "rating": 3.8,
       "on_time_pct": 86,
       "created_at": "2026-05-29T17:00:00Z"
+    },
+    {
+      "id": 16,
+      "name": "Vidhi",
+      "category": "IT Hardware",
+      "contact_name": "Atharv",
+      "email": "sjvda@gmail.com",
+      "phone": "3215132132",
+      "city": "Texas",
+      "gst_number": "kgfslejkas,f",
+      "risk_level": "Medium",
+      "status": "Active",
+      "rating": 5,
+      "on_time_pct": 100,
+      "created_at": "2026-06-06T08:32:52.450Z"
     }
   ],
-  "vendor_ratings": [],
+  "vendor_ratings": [
+    {
+      "id": 1,
+      "vendor_id": 16,
+      "user_id": 1,
+      "rating": 5,
+      "created_at": "2026-06-06T08:56:38.873Z"
+    }
+  ],
   "rfqs": [
+    {
+      "id": "RFQ-2026-016",
+      "title": "DESKTOP RAM REQUIREMNT 32GB",
+      "description": "WE NEED RAMS OF 32 GB 3200MTS",
+      "deadline": "2029-05-01",
+      "priority": "Medium",
+      "status": "Quotations Received",
+      "created_by": 2,
+      "created_at": "2026-06-06T08:54:16.588Z"
+    },
     {
       "id": "RFQ-2026-001",
       "title": "Enterprise Developer Laptop Procurement",
       "description": "Sourcing 50 high-spec developer laptops for engineering department onboarding.",
       "deadline": "2026-06-15",
       "priority": "High",
-      "status": "Under Approval",
+      "status": "PO Generated",
       "created_by": 2,
       "created_at": "2026-05-20T10:00:00Z"
     },
@@ -291,7 +324,7 @@
       "description": "Regular recurring purchase of eco-friendly A4 reams, archiving folders, and pen supplies.",
       "deadline": "2026-06-25",
       "priority": "Low",
-      "status": "Quotations Received",
+      "status": "Under Approval",
       "created_by": 2,
       "created_at": "2026-05-22T11:30:00Z"
     },
@@ -538,6 +571,13 @@
       "name": "AI Helpdesk Integration Setup",
       "quantity": 1,
       "unit": "setup"
+    },
+    {
+      "id": 17,
+      "rfq_id": "RFQ-2026-016",
+      "name": "CRUCIAL RAM STICKS",
+      "quantity": 500,
+      "unit": "units"
     }
   ],
   "rfq_vendors": [
@@ -564,6 +604,70 @@
     {
       "rfq_id": "RFQ-2026-003",
       "vendor_id": 5
+    },
+    {
+      "rfq_id": "RFQ-2026-016",
+      "vendor_id": 1
+    },
+    {
+      "rfq_id": "RFQ-2026-016",
+      "vendor_id": 2
+    },
+    {
+      "rfq_id": "RFQ-2026-016",
+      "vendor_id": 3
+    },
+    {
+      "rfq_id": "RFQ-2026-016",
+      "vendor_id": 4
+    },
+    {
+      "rfq_id": "RFQ-2026-016",
+      "vendor_id": 5
+    },
+    {
+      "rfq_id": "RFQ-2026-016",
+      "vendor_id": 6
+    },
+    {
+      "rfq_id": "RFQ-2026-016",
+      "vendor_id": 9
+    },
+    {
+      "rfq_id": "RFQ-2026-016",
+      "vendor_id": 7
+    },
+    {
+      "rfq_id": "RFQ-2026-016",
+      "vendor_id": 8
+    },
+    {
+      "rfq_id": "RFQ-2026-016",
+      "vendor_id": 10
+    },
+    {
+      "rfq_id": "RFQ-2026-016",
+      "vendor_id": 11
+    },
+    {
+      "rfq_id": "RFQ-2026-016",
+      "vendor_id": 12
+    },
+    {
+      "rfq_id": "RFQ-2026-016",
+      "vendor_id": 15
+    },
+    {
+      "rfq_id": "RFQ-2026-016",
+      "vendor_id": 14
+    },
+    {
+      "rfq_id": "RFQ-2026-016",
+      "vendor_id": 13
+    },
+    {
+      "rfq_id": "RFQ-2026-016",
+      "vendor_id": 16
     }
   ],
   "quotations": [
@@ -574,7 +678,7 @@
       "delivery_days": 7,
       "notes": "Laptops with customized configurations. Offer includes 3-year commercial warranty.",
       "total_amount": 1450000,
-      "status": "Submitted",
+      "status": "Selected",
       "submitted_at": "2026-05-24T09:12:00Z"
     },
     {
@@ -716,6 +820,16 @@
       "total_amount": 60000,
       "status": "Submitted",
       "submitted_at": "2026-06-06T16:00:00Z"
+    },
+    {
+      "id": 16,
+      "rfq_id": "RFQ-2026-016",
+      "vendor_id": 1,
+      "delivery_days": 7,
+      "notes": "",
+      "total_amount": 125000,
+      "status": "Rejected",
+      "submitted_at": "2026-06-06T08:54:46.960Z"
     }
   ],
   "quotation_items": [
@@ -837,9 +951,60 @@
       "rfq_item_id": 10,
       "unit_price": 5000,
       "total_price": 60000
+    },
+    {
+      "id": 18,
+      "quotation_id": 16,
+      "rfq_item_id": 17,
+      "unit_price": 250,
+      "total_price": 125000
     }
   ],
   "approvals": [
+    {
+      "id": 15,
+      "rfq_id": "RFQ-2026-016",
+      "quotation_id": 16,
+      "requested_by": 1,
+      "approved_by": 1,
+      "status": "Approved",
+      "remarks": "OK",
+      "requested_at": "2026-06-06T08:56:59.203Z",
+      "actioned_at": "2026-06-06T08:57:24.817Z"
+    },
+    {
+      "id": 14,
+      "rfq_id": "RFQ-2026-016",
+      "quotation_id": 16,
+      "requested_by": 1,
+      "approved_by": 1,
+      "status": "Rejected",
+      "remarks": "REPEAT",
+      "requested_at": "2026-06-06T08:56:27.457Z",
+      "actioned_at": "2026-06-06T08:57:45.743Z"
+    },
+    {
+      "id": 13,
+      "rfq_id": "RFQ-2026-001",
+      "quotation_id": 1,
+      "requested_by": 1,
+      "approved_by": 1,
+      "status": "Approved",
+      "remarks": "Good work",
+      "requested_at": "2026-06-06T08:33:52.108Z",
+      "actioned_at": "2026-06-06T08:34:14.676Z"
+    },
+    {
+      "id": 12,
+      "rfq_id": "RFQ-2026-002",
+      "quotation_id": 3,
+      "requested_by": 1,
+      "approved_by": null,
+      "status": "Pending",
+      "remarks": "",
+      "requested_at": "2026-06-06T08:31:09.230Z",
+      "actioned_at": null
+    },
     {
       "id": 1,
       "rfq_id": "RFQ-2026-001",
@@ -964,6 +1129,32 @@
   ],
   "purchase_orders": [
     {
+      "id": "PO-2026-011",
+      "rfq_id": "RFQ-2026-016",
+      "quotation_id": 16,
+      "vendor_id": 1,
+      "approval_id": 15,
+      "subtotal": 125000,
+      "gst_amount": 22500,
+      "total_amount": 147500,
+      "status": "Active",
+      "po_date": "2026-06-06T08:57:24.817Z",
+      "delivery_date": "2026-06-13"
+    },
+    {
+      "id": "PO-2026-010",
+      "rfq_id": "RFQ-2026-001",
+      "quotation_id": 1,
+      "vendor_id": 1,
+      "approval_id": 13,
+      "subtotal": 1450000,
+      "gst_amount": 261000,
+      "total_amount": 1711000,
+      "status": "Active",
+      "po_date": "2026-06-06T08:34:14.676Z",
+      "delivery_date": "2026-06-13"
+    },
+    {
       "id": "PO-2026-001",
       "rfq_id": "RFQ-2026-007",
       "quotation_id": 7,
@@ -1024,7 +1215,7 @@
       "subtotal": 5000,
       "gst_amount": 900,
       "total_amount": 5900,
-      "status": "Active",
+      "status": "Invoiced",
       "po_date": "2026-06-06T09:30:00Z",
       "delivery_date": "2026-06-13"
     },
@@ -1082,6 +1273,16 @@
     }
   ],
   "invoices": [
+    {
+      "id": "INV-2026-010",
+      "po_id": "PO-2026-005",
+      "vendor_id": 2,
+      "subtotal": 5000,
+      "gst_amount": 900,
+      "total_amount": 5900,
+      "status": "Generated",
+      "generated_at": "2026-06-06T08:58:20.732Z"
+    },
     {
       "id": "INV-2026-001",
       "po_id": "PO-2026-001",
@@ -1174,6 +1375,321 @@
     }
   ],
   "activity_log": [
+    {
+      "id": 49,
+      "user_id": 1,
+      "action": "User sign out completed",
+      "entity_type": "vendor",
+      "entity_id": "1",
+      "details": "Signed out user session",
+      "created_at": "2026-06-06T09:24:20.975Z"
+    },
+    {
+      "id": 48,
+      "user_id": 1,
+      "action": "Invoiced Purchase Order",
+      "entity_type": "invoice",
+      "entity_id": "INV-2026-010",
+      "details": "Generated Invoice INV-2026-010 for PO PO-2026-005 under supplier Paper & More Supplies",
+      "created_at": "2026-06-06T08:58:20.732Z"
+    },
+    {
+      "id": 47,
+      "user_id": 1,
+      "action": "Rejected Quotation Selection",
+      "entity_type": "approval",
+      "entity_id": "14",
+      "details": "Rejected Quote selection: RFQ-2026-016 reset to Quotations Received",
+      "created_at": "2026-06-06T08:57:45.743Z"
+    },
+    {
+      "id": 46,
+      "user_id": 1,
+      "action": "Approved Quotation PO Generated",
+      "entity_type": "po",
+      "entity_id": "PO-2026-011",
+      "details": "Authorized Purchase Order PO-2026-011 worth $147500 after selecting Quote ID 16",
+      "created_at": "2026-06-06T08:57:24.817Z"
+    },
+    {
+      "id": 45,
+      "user_id": 1,
+      "action": "Instigated Approval Chain",
+      "entity_type": "approval",
+      "entity_id": "15",
+      "details": "Awaiting manager review on standard quotation from Silicon Systems Ltd (Value $125000)",
+      "created_at": "2026-06-06T08:56:59.204Z"
+    },
+    {
+      "id": 44,
+      "user_id": 1,
+      "action": "Rated Vendor",
+      "entity_type": "vendor",
+      "entity_id": "16",
+      "details": "Rated vendor Vidhi with 5 stars",
+      "created_at": "2026-06-06T08:56:38.873Z"
+    },
+    {
+      "id": 43,
+      "user_id": 1,
+      "action": "Instigated Approval Chain",
+      "entity_type": "approval",
+      "entity_id": "14",
+      "details": "Awaiting manager review on standard quotation from Silicon Systems Ltd (Value $125000)",
+      "created_at": "2026-06-06T08:56:27.458Z"
+    },
+    {
+      "id": 42,
+      "user_id": 1,
+      "action": "User login successful",
+      "entity_type": "vendor",
+      "entity_id": "1",
+      "details": "Sarah Connor (Admin) logged in successfully",
+      "created_at": "2026-06-06T08:55:25.559Z"
+    },
+    {
+      "id": 41,
+      "user_id": 3,
+      "action": "User sign out completed",
+      "entity_type": "vendor",
+      "entity_id": "3",
+      "details": "Signed out user session",
+      "created_at": "2026-06-06T08:55:24.687Z"
+    },
+    {
+      "id": 40,
+      "user_id": 3,
+      "action": "User login successful",
+      "entity_type": "vendor",
+      "entity_id": "3",
+      "details": "Manager Alice logged in successfully",
+      "created_at": "2026-06-06T08:54:55.136Z"
+    },
+    {
+      "id": 39,
+      "user_id": 4,
+      "action": "User sign out completed",
+      "entity_type": "vendor",
+      "entity_id": "4",
+      "details": "Signed out user session",
+      "created_at": "2026-06-06T08:54:52.972Z"
+    },
+    {
+      "id": 38,
+      "user_id": 4,
+      "action": "Submitted Bid Quote",
+      "entity_type": "quotation",
+      "entity_id": "16",
+      "details": "Vendor \"Silicon Systems Ltd\" logged bid valuation total $125000 on RFQ-2026-016",
+      "created_at": "2026-06-06T08:54:46.960Z"
+    },
+    {
+      "id": 37,
+      "user_id": 4,
+      "action": "User login successful",
+      "entity_type": "vendor",
+      "entity_id": "4",
+      "details": "Silicon Systems Account logged in successfully",
+      "created_at": "2026-06-06T08:54:29.424Z"
+    },
+    {
+      "id": 36,
+      "user_id": 2,
+      "action": "User sign out completed",
+      "entity_type": "vendor",
+      "entity_id": "2",
+      "details": "Signed out user session",
+      "created_at": "2026-06-06T08:54:27.336Z"
+    },
+    {
+      "id": 35,
+      "user_id": 2,
+      "action": "Initiated RFQ sheet",
+      "entity_type": "rfq",
+      "entity_id": "RFQ-2026-016",
+      "details": "Created RFQ-2026-016 with priority Medium and 1 lines",
+      "created_at": "2026-06-06T08:54:16.589Z"
+    },
+    {
+      "id": 34,
+      "user_id": 2,
+      "action": "User login successful",
+      "entity_type": "vendor",
+      "entity_id": "2",
+      "details": "Officer Bob (Procurement) logged in successfully",
+      "created_at": "2026-06-06T08:52:22.389Z"
+    },
+    {
+      "id": 33,
+      "user_id": 4,
+      "action": "User sign out completed",
+      "entity_type": "vendor",
+      "entity_id": "4",
+      "details": "Signed out user session",
+      "created_at": "2026-06-06T08:52:20.105Z"
+    },
+    {
+      "id": 32,
+      "user_id": 4,
+      "action": "User login successful",
+      "entity_type": "vendor",
+      "entity_id": "4",
+      "details": "Silicon Systems Account logged in successfully",
+      "created_at": "2026-06-06T08:51:02.199Z"
+    },
+    {
+      "id": 31,
+      "user_id": 1,
+      "action": "User sign out completed",
+      "entity_type": "vendor",
+      "entity_id": "1",
+      "details": "Signed out user session",
+      "created_at": "2026-06-06T08:50:50.944Z"
+    },
+    {
+      "id": 30,
+      "user_id": 1,
+      "action": "User login successful",
+      "entity_type": "vendor",
+      "entity_id": "1",
+      "details": "Sarah Connor (Admin) logged in successfully",
+      "created_at": "2026-06-06T08:47:13.025Z"
+    },
+    {
+      "id": 29,
+      "user_id": 3,
+      "action": "User sign out completed",
+      "entity_type": "vendor",
+      "entity_id": "3",
+      "details": "Signed out user session",
+      "created_at": "2026-06-06T08:36:29.354Z"
+    },
+    {
+      "id": 28,
+      "user_id": 3,
+      "action": "User login successful",
+      "entity_type": "vendor",
+      "entity_id": "3",
+      "details": "Manager Alice logged in successfully",
+      "created_at": "2026-06-06T08:36:07.440Z"
+    },
+    {
+      "id": 27,
+      "user_id": 2,
+      "action": "User sign out completed",
+      "entity_type": "vendor",
+      "entity_id": "2",
+      "details": "Signed out user session",
+      "created_at": "2026-06-06T08:36:06.559Z"
+    },
+    {
+      "id": 26,
+      "user_id": 2,
+      "action": "User login successful",
+      "entity_type": "vendor",
+      "entity_id": "2",
+      "details": "Officer Bob (Procurement) logged in successfully",
+      "created_at": "2026-06-06T08:35:36.645Z"
+    },
+    {
+      "id": 25,
+      "user_id": 4,
+      "action": "User sign out completed",
+      "entity_type": "vendor",
+      "entity_id": "4",
+      "details": "Signed out user session",
+      "created_at": "2026-06-06T08:35:34.871Z"
+    },
+    {
+      "id": 24,
+      "user_id": 4,
+      "action": "User login successful",
+      "entity_type": "vendor",
+      "entity_id": "4",
+      "details": "Silicon Systems Account logged in successfully",
+      "created_at": "2026-06-06T08:34:51.973Z"
+    },
+    {
+      "id": 23,
+      "user_id": 1,
+      "action": "User sign out completed",
+      "entity_type": "vendor",
+      "entity_id": "1",
+      "details": "Signed out user session",
+      "created_at": "2026-06-06T08:34:50.888Z"
+    },
+    {
+      "id": 22,
+      "user_id": 1,
+      "action": "Approved Quotation PO Generated",
+      "entity_type": "po",
+      "entity_id": "PO-2026-010",
+      "details": "Authorized Purchase Order PO-2026-010 worth $1711000 after selecting Quote ID 1",
+      "created_at": "2026-06-06T08:34:14.676Z"
+    },
+    {
+      "id": 21,
+      "user_id": 1,
+      "action": "Instigated Approval Chain",
+      "entity_type": "approval",
+      "entity_id": "13",
+      "details": "Awaiting manager review on standard quotation from Silicon Systems Ltd (Value $1450000)",
+      "created_at": "2026-06-06T08:33:52.109Z"
+    },
+    {
+      "id": 20,
+      "user_id": 1,
+      "action": "Updated Vendor information",
+      "entity_type": "vendor",
+      "entity_id": "16",
+      "details": "Updated contact / risk parameters for vendor profile: Vidhi",
+      "created_at": "2026-06-06T08:33:18.037Z"
+    },
+    {
+      "id": 19,
+      "user_id": 1,
+      "action": "Registered new Vendor",
+      "entity_type": "vendor",
+      "entity_id": "16",
+      "details": "Successfully added vendor profile PAtil under category IT Hardware",
+      "created_at": "2026-06-06T08:32:52.450Z"
+    },
+    {
+      "id": 18,
+      "user_id": 1,
+      "action": "User login successful",
+      "entity_type": "vendor",
+      "entity_id": "1",
+      "details": "Sarah Connor (Admin) logged in successfully",
+      "created_at": "2026-06-06T08:32:11.836Z"
+    },
+    {
+      "id": 17,
+      "user_id": 1,
+      "action": "User sign out completed",
+      "entity_type": "vendor",
+      "entity_id": "1",
+      "details": "Signed out user session",
+      "created_at": "2026-06-06T08:32:09.116Z"
+    },
+    {
+      "id": 16,
+      "user_id": 1,
+      "action": "Instigated Approval Chain",
+      "entity_type": "approval",
+      "entity_id": "12",
+      "details": "Awaiting manager review on standard quotation from Micro Circuits Inc (Value $29000)",
+      "created_at": "2026-06-06T08:31:09.230Z"
+    },
+    {
+      "id": 15,
+      "user_id": 1,
+      "action": "User login successful",
+      "entity_type": "vendor",
+      "entity_id": "1",
+      "details": "Sarah Connor (Admin) logged in successfully",
+      "created_at": "2026-06-06T08:23:45.026Z"
+    },
     {
       "id": 14,
       "user_id": 1,
