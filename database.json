@@ -1,0 +1,2489 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Sarah Connor (Admin)",
+      "email": "admin@vendorbridge.com",
+      "password": "$2b$10$aR4Aa1Y5/pI/FyPmt4t0tuw4ctqykVqv0n1FjW/hXpu9oFyz/QHHO",
+      "role": "admin",
+      "vendor_id": null,
+      "created_at": "2026-01-01T08:00:00Z"
+    },
+    {
+      "id": 2,
+      "name": "Officer Bob (Procurement)",
+      "email": "officer@vendorbridge.com",
+      "password": "$2b$10$jukyEDUFxuiy28Owhev3y.RzvaI7VPEmEZYELqwU2tI76l2yxy8LG",
+      "role": "procurement_officer",
+      "vendor_id": null,
+      "created_at": "2026-01-02T09:00:00Z"
+    },
+    {
+      "id": 3,
+      "name": "Manager Alice",
+      "email": "manager@vendorbridge.com",
+      "password": "$2b$10$XEyoYNIyjzrEyXr3TRH86OJoiSOGLF3DrDskwPAp9OQRdFxYOZazm",
+      "role": "manager",
+      "vendor_id": null,
+      "created_at": "2026-01-03T10:00:00Z"
+    },
+    {
+      "id": 4,
+      "name": "Silicon Systems Account",
+      "email": "silicon@vendorbridge.com",
+      "password": "$2b$10$LThUBqD/qt9LobLKtYO3B.yT3iYQuyA.cr0g2T7X1QfL3DAgcJ4pa",
+      "role": "vendor",
+      "vendor_id": 1,
+      "created_at": "2026-01-11T10:30:00Z"
+    },
+    {
+      "id": 5,
+      "name": "Apex Logistics Account",
+      "email": "apex@vendorbridge.com",
+      "password": "$2b$10$Fuyd1GwWqwIigxUYguPaIeiwx4db3NNiFel7SgTIQrFjPsXoyTfRa",
+      "role": "vendor",
+      "vendor_id": 3,
+      "created_at": "2026-03-21T10:00:00Z"
+    }
+  ],
+  "vendors": [
+    {
+      "id": 1,
+      "name": "Silicon Systems Ltd",
+      "category": "IT Hardware",
+      "contact_name": "John Doe",
+      "email": "silicon@vendorbridge.com",
+      "phone": "+1 555-0101",
+      "city": "Tech City",
+      "gst_number": "GSTIN12345IT",
+      "risk_level": "Low",
+      "status": "Active",
+      "rating": 4.8,
+      "on_time_pct": 98,
+      "created_at": "2026-01-10T10:00:00Z"
+    },
+    {
+      "id": 2,
+      "name": "Paper & More Supplies",
+      "category": "Office Supplies",
+      "contact_name": "Jane Smith",
+      "email": "paper@vendorbridge.com",
+      "phone": "+1 555-0102",
+      "city": "Metro City",
+      "gst_number": "GSTIN23456OS",
+      "risk_level": "Low",
+      "status": "Active",
+      "rating": 4.2,
+      "on_time_pct": 95,
+      "created_at": "2026-02-15T11:00:00Z"
+    },
+    {
+      "id": 3,
+      "name": "Apex Logistics Corp",
+      "category": "Logistics",
+      "contact_name": "Robert Johnson",
+      "email": "apex@vendorbridge.com",
+      "phone": "+1 555-0103",
+      "city": "Port City",
+      "gst_number": "GSTIN34567LG",
+      "risk_level": "Medium",
+      "status": "Active",
+      "rating": 4.5,
+      "on_time_pct": 92,
+      "created_at": "2026-03-20T09:30:00Z"
+    },
+    {
+      "id": 4,
+      "name": "Micro Circuits Inc",
+      "category": "Electronics",
+      "contact_name": "Alice Brown",
+      "email": "micro@vendorbridge.com",
+      "phone": "+1 555-0104",
+      "city": "Silicon Valley",
+      "gst_number": "GSTIN45678EL",
+      "risk_level": "High",
+      "status": "Active",
+      "rating": 3.9,
+      "on_time_pct": 88,
+      "created_at": "2026-04-05T14:15:00Z"
+    },
+    {
+      "id": 5,
+      "name": "Global Forge Heavy Industries",
+      "category": "Manufacturing",
+      "contact_name": "David Wilson",
+      "email": "forge@vendorbridge.com",
+      "phone": "+1 555-0105",
+      "city": "Forge Town",
+      "gst_number": "GSTIN56789MF",
+      "risk_level": "Low",
+      "status": "Active",
+      "rating": 4.7,
+      "on_time_pct": 96,
+      "created_at": "2026-05-18T16:45:00Z"
+    },
+    {
+      "id": 6,
+      "name": "Eco Packaging Solutions",
+      "category": "Packaging",
+      "contact_name": "Emma Watson",
+      "email": "emma@ecopack.com",
+      "phone": "+1 555-0106",
+      "city": "Green City",
+      "gst_number": "GSTIN67890EP",
+      "risk_level": "Low",
+      "status": "Active",
+      "rating": 4.6,
+      "on_time_pct": 94,
+      "created_at": "2026-05-20T10:00:00Z"
+    },
+    {
+      "id": 7,
+      "name": "NextGen Softworks",
+      "category": "IT Software",
+      "contact_name": "Paul Walker",
+      "email": "p.walker@nextgen.com",
+      "phone": "+1 555-0107",
+      "city": "Cyber City",
+      "gst_number": "GSTIN007NG",
+      "risk_level": "Medium",
+      "status": "Active",
+      "rating": 4.3,
+      "on_time_pct": 90,
+      "created_at": "2026-05-21T09:00:00Z"
+    },
+    {
+      "id": 8,
+      "name": "Secure Transit Authority",
+      "category": "Logistics",
+      "contact_name": "Rebecca Miles",
+      "email": "rebecca@sta.com",
+      "phone": "+1 555-0108",
+      "city": "Port City",
+      "gst_number": "GSTIN008ST",
+      "risk_level": "Low",
+      "status": "Active",
+      "rating": 4.9,
+      "on_time_pct": 99,
+      "created_at": "2026-05-22T08:00:00Z"
+    },
+    {
+      "id": 9,
+      "name": "IronClad Security",
+      "category": "Services",
+      "contact_name": "Tom Hardy",
+      "email": "tom@ironclad.com",
+      "phone": "+1 555-0109",
+      "city": "Metro City",
+      "gst_number": "GSTIN009IC",
+      "risk_level": "High",
+      "status": "Active",
+      "rating": 3.5,
+      "on_time_pct": 85,
+      "created_at": "2026-05-23T11:00:00Z"
+    },
+    {
+      "id": 10,
+      "name": "Office Ergonomics Plus",
+      "category": "Office Supplies",
+      "contact_name": "Sarah Connor",
+      "email": "s.connor@oep.com",
+      "phone": "+1 555-0110",
+      "city": "Tech City",
+      "gst_number": "GSTIN010OE",
+      "risk_level": "Low",
+      "status": "Active",
+      "rating": 4.5,
+      "on_time_pct": 93,
+      "created_at": "2026-05-24T12:00:00Z"
+    },
+    {
+      "id": 11,
+      "name": "Bright Ideas Lighting",
+      "category": "Electronics",
+      "contact_name": "Luke Skywalker",
+      "email": "luke@brightideas.com",
+      "phone": "+1 555-0111",
+      "city": "Crystal City",
+      "gst_number": "GSTIN011BI",
+      "risk_level": "Low",
+      "status": "Active",
+      "rating": 4.8,
+      "on_time_pct": 97,
+      "created_at": "2026-05-25T13:00:00Z"
+    },
+    {
+      "id": 12,
+      "name": "Prime Resources",
+      "category": "Manufacturing",
+      "contact_name": "Diana Prince",
+      "email": "diana@primeresources.com",
+      "phone": "+1 555-0112",
+      "city": "Forge Town",
+      "gst_number": "GSTIN012PR",
+      "risk_level": "Medium",
+      "status": "Active",
+      "rating": 4,
+      "on_time_pct": 89,
+      "created_at": "2026-05-26T14:00:00Z"
+    },
+    {
+      "id": 13,
+      "name": "Oceanic Freight",
+      "category": "Logistics",
+      "contact_name": "Arthur Curry",
+      "email": "arthur@oceanic.com",
+      "phone": "+1 555-0113",
+      "city": "Port City",
+      "gst_number": "GSTIN013OF",
+      "risk_level": "Low",
+      "status": "Active",
+      "rating": 4.7,
+      "on_time_pct": 95,
+      "created_at": "2026-05-27T15:00:00Z"
+    },
+    {
+      "id": 14,
+      "name": "Green Space Landscaping",
+      "category": "Services",
+      "contact_name": "Pamela Isley",
+      "email": "pamela@greenspace.com",
+      "phone": "+1 555-0114",
+      "city": "Garden City",
+      "gst_number": "GSTIN014GS",
+      "risk_level": "Low",
+      "status": "Active",
+      "rating": 4.4,
+      "on_time_pct": 92,
+      "created_at": "2026-05-28T16:00:00Z"
+    },
+    {
+      "id": 15,
+      "name": "Delta Cybernetics",
+      "category": "IT Hardware",
+      "contact_name": "Victor Stone",
+      "email": "victor@deltacyber.com",
+      "phone": "+1 555-0115",
+      "city": "Silicon Valley",
+      "gst_number": "GSTIN015DC",
+      "risk_level": "High",
+      "status": "Active",
+      "rating": 3.8,
+      "on_time_pct": 86,
+      "created_at": "2026-05-29T17:00:00Z"
+    }
+  ],
+  "vendor_ratings": [],
+  "rfqs": [
+    {
+      "id": "RFQ-2026-001",
+      "title": "Enterprise Developer Laptop Procurement",
+      "description": "Sourcing 50 high-spec developer laptops for engineering department onboarding.",
+      "deadline": "2026-06-15",
+      "priority": "High",
+      "status": "Under Approval",
+      "created_by": 2,
+      "created_at": "2026-05-20T10:00:00Z"
+    },
+    {
+      "id": "RFQ-2026-002",
+      "title": "Bi-annual Corporate Office Stationery Supply",
+      "description": "Regular recurring purchase of eco-friendly A4 reams, archiving folders, and pen supplies.",
+      "deadline": "2026-06-25",
+      "priority": "Low",
+      "status": "Quotations Received",
+      "created_by": 2,
+      "created_at": "2026-05-22T11:30:00Z"
+    },
+    {
+      "id": "RFQ-2026-003",
+      "title": "Heavy Parts Logistical Freight Service",
+      "description": "Flatbed transport of forged factory conveyor components from Forge Town and delivery in Port City.",
+      "deadline": "2026-06-30",
+      "priority": "Critical",
+      "status": "Open",
+      "created_by": 2,
+      "created_at": "2026-05-25T14:00:00Z"
+    },
+    {
+      "id": "RFQ-2026-004",
+      "title": "Q3 Packaging Material Supply",
+      "description": "Sustainable packaging materials for Q3 product shipments",
+      "deadline": "2026-07-01",
+      "priority": "Medium",
+      "status": "Open",
+      "created_by": 2,
+      "created_at": "2026-06-01T09:00:00Z"
+    },
+    {
+      "id": "RFQ-2026-005",
+      "title": "Server Room Cooling Units",
+      "description": "Upgraded HVAC units for main server room",
+      "deadline": "2026-06-20",
+      "priority": "High",
+      "status": "Quotations Received",
+      "created_by": 2,
+      "created_at": "2026-06-02T10:00:00Z"
+    },
+    {
+      "id": "RFQ-2026-006",
+      "title": "Employee Welcome Kits",
+      "description": "Branded welcome kits for 100 new hires",
+      "deadline": "2026-07-15",
+      "priority": "Low",
+      "status": "Under Approval",
+      "created_by": 2,
+      "created_at": "2026-06-03T11:00:00Z"
+    },
+    {
+      "id": "RFQ-2026-007",
+      "title": "Office Furniture Upgrade",
+      "description": "Ergonomic chairs and standing desks",
+      "deadline": "2026-07-10",
+      "priority": "Medium",
+      "status": "PO Generated",
+      "created_by": 2,
+      "created_at": "2026-06-04T12:00:00Z"
+    },
+    {
+      "id": "RFQ-2026-008",
+      "title": "Cloud Infrastructure Audit",
+      "description": "External security and compliance audit",
+      "deadline": "2026-06-30",
+      "priority": "Critical",
+      "status": "Closed",
+      "created_by": 2,
+      "created_at": "2026-06-05T13:00:00Z"
+    },
+    {
+      "id": "RFQ-2026-009",
+      "title": "Marketing Agency Retainer",
+      "description": "Annual retainer for digital marketing agency services",
+      "deadline": "2026-07-31",
+      "priority": "Medium",
+      "status": "Open",
+      "created_by": 2,
+      "created_at": "2026-06-06T09:00:00Z"
+    },
+    {
+      "id": "RFQ-2026-010",
+      "title": "Warehouse Racking System",
+      "description": "Heavy duty steel racking for new warehouse facility",
+      "deadline": "2026-08-15",
+      "priority": "High",
+      "status": "Quotations Received",
+      "created_by": 2,
+      "created_at": "2026-06-06T10:00:00Z"
+    },
+    {
+      "id": "RFQ-2026-011",
+      "title": "Corporate Event Catering",
+      "description": "Catering services for annual company gala",
+      "deadline": "2026-09-01",
+      "priority": "Low",
+      "status": "Open",
+      "created_by": 2,
+      "created_at": "2026-06-06T11:00:00Z"
+    },
+    {
+      "id": "RFQ-2026-012",
+      "title": "Cybersecurity Training Software",
+      "description": "Enterprise license for employee security awareness platform",
+      "deadline": "2026-06-25",
+      "priority": "Critical",
+      "status": "Under Approval",
+      "created_by": 2,
+      "created_at": "2026-06-06T12:00:00Z"
+    },
+    {
+      "id": "RFQ-2026-013",
+      "title": "Fleet Vehicle Maintenance Service",
+      "description": "Quarterly maintenance contract for company delivery vans",
+      "deadline": "2026-07-20",
+      "priority": "Medium",
+      "status": "PO Generated",
+      "created_by": 2,
+      "created_at": "2026-06-06T13:00:00Z"
+    },
+    {
+      "id": "RFQ-2026-014",
+      "title": "Renewable Energy Consultation",
+      "description": "Assessment of solar panel installation feasibility",
+      "deadline": "2026-08-30",
+      "priority": "Low",
+      "status": "Open",
+      "created_by": 2,
+      "created_at": "2026-06-06T14:00:00Z"
+    },
+    {
+      "id": "RFQ-2026-015",
+      "title": "Customer Support Helpdesk AI",
+      "description": "AI-driven ticketing and chatbot solution",
+      "deadline": "2026-07-05",
+      "priority": "High",
+      "status": "Closed",
+      "created_by": 2,
+      "created_at": "2026-06-06T15:00:00Z"
+    }
+  ],
+  "rfq_items": [
+    {
+      "id": 1,
+      "rfq_id": "RFQ-2026-001",
+      "name": "High-spec Developer Laptops (32GB RAM, 1TB SSD)",
+      "quantity": 50,
+      "unit": "units"
+    },
+    {
+      "id": 2,
+      "rfq_id": "RFQ-2026-002",
+      "name": "A4 Copier Paper Reams (Recycled)",
+      "quantity": 500,
+      "unit": "reams"
+    },
+    {
+      "id": 3,
+      "rfq_id": "RFQ-2026-002",
+      "name": "Premium Archiving Black Ring Files",
+      "quantity": 150,
+      "unit": "units"
+    },
+    {
+      "id": 4,
+      "rfq_id": "RFQ-2026-003",
+      "name": "Heavy Conveyor Forged Rollers (Industrial Grade)",
+      "quantity": 2,
+      "unit": "freight units"
+    },
+    {
+      "id": 5,
+      "rfq_id": "RFQ-2026-004",
+      "name": "Recycled Cardboard Boxes",
+      "quantity": 5000,
+      "unit": "units"
+    },
+    {
+      "id": 6,
+      "rfq_id": "RFQ-2026-005",
+      "name": "HVAC Cooling Unit 5 Ton",
+      "quantity": 2,
+      "unit": "units"
+    },
+    {
+      "id": 7,
+      "rfq_id": "RFQ-2026-006",
+      "name": "Welcome Kit (Mug, Notebook, Pen)",
+      "quantity": 100,
+      "unit": "kits"
+    },
+    {
+      "id": 8,
+      "rfq_id": "RFQ-2026-007",
+      "name": "Ergonomic Office Chair",
+      "quantity": 30,
+      "unit": "units"
+    },
+    {
+      "id": 9,
+      "rfq_id": "RFQ-2026-008",
+      "name": "Infrastructure Audit Service",
+      "quantity": 1,
+      "unit": "service"
+    },
+    {
+      "id": 10,
+      "rfq_id": "RFQ-2026-009",
+      "name": "Digital Marketing Campaign Management",
+      "quantity": 12,
+      "unit": "months"
+    },
+    {
+      "id": 11,
+      "rfq_id": "RFQ-2026-010",
+      "name": "Heavy Duty Steel Pallet Racks",
+      "quantity": 50,
+      "unit": "units"
+    },
+    {
+      "id": 12,
+      "rfq_id": "RFQ-2026-011",
+      "name": "Gala Dinner Packages (3-course)",
+      "quantity": 250,
+      "unit": "pax"
+    },
+    {
+      "id": 13,
+      "rfq_id": "RFQ-2026-012",
+      "name": "Cybersecurity Platform Enterprise License",
+      "quantity": 1,
+      "unit": "license"
+    },
+    {
+      "id": 14,
+      "rfq_id": "RFQ-2026-013",
+      "name": "Van Maintenance Package (Oil, Filters, Brakes)",
+      "quantity": 20,
+      "unit": "vehicles"
+    },
+    {
+      "id": 15,
+      "rfq_id": "RFQ-2026-014",
+      "name": "Solar Feasibility Study Report",
+      "quantity": 1,
+      "unit": "report"
+    },
+    {
+      "id": 16,
+      "rfq_id": "RFQ-2026-015",
+      "name": "AI Helpdesk Integration Setup",
+      "quantity": 1,
+      "unit": "setup"
+    }
+  ],
+  "rfq_vendors": [
+    {
+      "rfq_id": "RFQ-2026-001",
+      "vendor_id": 1
+    },
+    {
+      "rfq_id": "RFQ-2026-001",
+      "vendor_id": 4
+    },
+    {
+      "rfq_id": "RFQ-2026-002",
+      "vendor_id": 2
+    },
+    {
+      "rfq_id": "RFQ-2026-002",
+      "vendor_id": 4
+    },
+    {
+      "rfq_id": "RFQ-2026-003",
+      "vendor_id": 3
+    },
+    {
+      "rfq_id": "RFQ-2026-003",
+      "vendor_id": 5
+    }
+  ],
+  "quotations": [
+    {
+      "id": 1,
+      "rfq_id": "RFQ-2026-001",
+      "vendor_id": 1,
+      "delivery_days": 7,
+      "notes": "Laptops with customized configurations. Offer includes 3-year commercial warranty.",
+      "total_amount": 1450000,
+      "status": "Submitted",
+      "submitted_at": "2026-05-24T09:12:00Z"
+    },
+    {
+      "id": 2,
+      "rfq_id": "RFQ-2026-002",
+      "vendor_id": 2,
+      "delivery_days": 3,
+      "notes": "Direct warehouse pricing. Immediate stock availability. Included complimentary pen boxes.",
+      "total_amount": 25000,
+      "status": "Submitted",
+      "submitted_at": "2026-05-26T15:20:00Z"
+    },
+    {
+      "id": 3,
+      "rfq_id": "RFQ-2026-002",
+      "vendor_id": 4,
+      "delivery_days": 10,
+      "notes": "Eco-certified corporate stationery packs. Delay expected due to custom branding file folders.",
+      "total_amount": 29000,
+      "status": "Submitted",
+      "submitted_at": "2026-05-28T10:45:00Z"
+    },
+    {
+      "id": 4,
+      "rfq_id": "RFQ-2026-003",
+      "vendor_id": 3,
+      "delivery_days": 5,
+      "notes": "Insured flatbed transit with GPS tracking. Fully vetted operators.",
+      "total_amount": 120000,
+      "status": "Draft",
+      "submitted_at": "2026-05-29T16:00:00Z"
+    },
+    {
+      "id": 5,
+      "rfq_id": "RFQ-2026-005",
+      "vendor_id": 1,
+      "delivery_days": 14,
+      "notes": "Includes installation",
+      "total_amount": 15000,
+      "status": "Submitted",
+      "submitted_at": "2026-06-03T09:00:00Z"
+    },
+    {
+      "id": 6,
+      "rfq_id": "RFQ-2026-006",
+      "vendor_id": 2,
+      "delivery_days": 7,
+      "notes": "Standard branding",
+      "total_amount": 5000,
+      "status": "Selected",
+      "submitted_at": "2026-06-04T10:00:00Z"
+    },
+    {
+      "id": 7,
+      "rfq_id": "RFQ-2026-007",
+      "vendor_id": 4,
+      "delivery_days": 21,
+      "notes": "Premium chairs",
+      "total_amount": 12000,
+      "status": "Selected",
+      "submitted_at": "2026-06-05T11:00:00Z"
+    },
+    {
+      "id": 8,
+      "rfq_id": "RFQ-2026-008",
+      "vendor_id": 1,
+      "delivery_days": 30,
+      "notes": "Comprehensive audit",
+      "total_amount": 25000,
+      "status": "Selected",
+      "submitted_at": "2026-06-06T12:00:00Z"
+    },
+    {
+      "id": 9,
+      "rfq_id": "RFQ-2026-004",
+      "vendor_id": 6,
+      "delivery_days": 10,
+      "notes": "100% recycled",
+      "total_amount": 7500,
+      "status": "Draft",
+      "submitted_at": "2026-06-05T14:00:00Z"
+    },
+    {
+      "id": 10,
+      "rfq_id": "RFQ-2026-010",
+      "vendor_id": 5,
+      "delivery_days": 45,
+      "notes": "Includes safety certification and installation",
+      "total_amount": 45000,
+      "status": "Submitted",
+      "submitted_at": "2026-06-06T10:30:00Z"
+    },
+    {
+      "id": 11,
+      "rfq_id": "RFQ-2026-010",
+      "vendor_id": 12,
+      "delivery_days": 30,
+      "notes": "Fast track delivery available",
+      "total_amount": 48000,
+      "status": "Submitted",
+      "submitted_at": "2026-06-06T11:00:00Z"
+    },
+    {
+      "id": 12,
+      "rfq_id": "RFQ-2026-012",
+      "vendor_id": 7,
+      "delivery_days": 1,
+      "notes": "Instant activation upon PO creation",
+      "total_amount": 15000,
+      "status": "Selected",
+      "submitted_at": "2026-06-06T13:00:00Z"
+    },
+    {
+      "id": 13,
+      "rfq_id": "RFQ-2026-013",
+      "vendor_id": 3,
+      "delivery_days": 3,
+      "notes": "On-site maintenance included",
+      "total_amount": 8000,
+      "status": "Selected",
+      "submitted_at": "2026-06-06T14:00:00Z"
+    },
+    {
+      "id": 14,
+      "rfq_id": "RFQ-2026-015",
+      "vendor_id": 7,
+      "delivery_days": 14,
+      "notes": "Setup, training, and 1 year support",
+      "total_amount": 22000,
+      "status": "Selected",
+      "submitted_at": "2026-06-06T15:30:00Z"
+    },
+    {
+      "id": 15,
+      "rfq_id": "RFQ-2026-009",
+      "vendor_id": 9,
+      "delivery_days": 7,
+      "notes": "Monthly reports included",
+      "total_amount": 60000,
+      "status": "Submitted",
+      "submitted_at": "2026-06-06T16:00:00Z"
+    }
+  ],
+  "quotation_items": [
+    {
+      "id": 1,
+      "quotation_id": 1,
+      "rfq_item_id": 1,
+      "unit_price": 29000,
+      "total_price": 1450000
+    },
+    {
+      "id": 2,
+      "quotation_id": 2,
+      "rfq_item_id": 2,
+      "unit_price": 40,
+      "total_price": 20000
+    },
+    {
+      "id": 3,
+      "quotation_id": 2,
+      "rfq_item_id": 3,
+      "unit_price": 33.33,
+      "total_price": 5000
+    },
+    {
+      "id": 4,
+      "quotation_id": 3,
+      "rfq_item_id": 2,
+      "unit_price": 45,
+      "total_price": 22500
+    },
+    {
+      "id": 5,
+      "quotation_id": 3,
+      "rfq_item_id": 3,
+      "unit_price": 43.33,
+      "total_price": 6500
+    },
+    {
+      "id": 6,
+      "quotation_id": 4,
+      "rfq_item_id": 4,
+      "unit_price": 60000,
+      "total_price": 120000
+    },
+    {
+      "id": 7,
+      "quotation_id": 5,
+      "rfq_item_id": 6,
+      "unit_price": 7500,
+      "total_price": 15000
+    },
+    {
+      "id": 8,
+      "quotation_id": 6,
+      "rfq_item_id": 7,
+      "unit_price": 50,
+      "total_price": 5000
+    },
+    {
+      "id": 9,
+      "quotation_id": 7,
+      "rfq_item_id": 8,
+      "unit_price": 400,
+      "total_price": 12000
+    },
+    {
+      "id": 10,
+      "quotation_id": 8,
+      "rfq_item_id": 9,
+      "unit_price": 25000,
+      "total_price": 25000
+    },
+    {
+      "id": 11,
+      "quotation_id": 9,
+      "rfq_item_id": 5,
+      "unit_price": 1.5,
+      "total_price": 7500
+    },
+    {
+      "id": 12,
+      "quotation_id": 10,
+      "rfq_item_id": 11,
+      "unit_price": 900,
+      "total_price": 45000
+    },
+    {
+      "id": 13,
+      "quotation_id": 11,
+      "rfq_item_id": 11,
+      "unit_price": 960,
+      "total_price": 48000
+    },
+    {
+      "id": 14,
+      "quotation_id": 12,
+      "rfq_item_id": 13,
+      "unit_price": 15000,
+      "total_price": 15000
+    },
+    {
+      "id": 15,
+      "quotation_id": 13,
+      "rfq_item_id": 14,
+      "unit_price": 400,
+      "total_price": 8000
+    },
+    {
+      "id": 16,
+      "quotation_id": 14,
+      "rfq_item_id": 16,
+      "unit_price": 22000,
+      "total_price": 22000
+    },
+    {
+      "id": 17,
+      "quotation_id": 15,
+      "rfq_item_id": 10,
+      "unit_price": 5000,
+      "total_price": 60000
+    }
+  ],
+  "approvals": [
+    {
+      "id": 1,
+      "rfq_id": "RFQ-2026-001",
+      "quotation_id": 1,
+      "requested_by": 2,
+      "approved_by": null,
+      "status": "Pending",
+      "remarks": "Silicon Systems bids with robust ratings and prompt on-time statistics. Highly recommended for selection.",
+      "requested_at": "2026-05-30T11:00:00Z",
+      "actioned_at": null
+    },
+    {
+      "id": 2,
+      "rfq_id": "RFQ-2026-006",
+      "quotation_id": 6,
+      "requested_by": 2,
+      "approved_by": null,
+      "status": "Pending",
+      "remarks": "Good price for kits",
+      "requested_at": "2026-06-04T11:00:00Z",
+      "actioned_at": null
+    },
+    {
+      "id": 3,
+      "rfq_id": "RFQ-2026-007",
+      "quotation_id": 7,
+      "requested_by": 2,
+      "approved_by": 3,
+      "status": "Approved",
+      "remarks": "Approved for ergonomic needs",
+      "requested_at": "2026-06-05T09:00:00Z",
+      "actioned_at": "2026-06-05T10:00:00Z"
+    },
+    {
+      "id": 4,
+      "rfq_id": "RFQ-2026-008",
+      "quotation_id": 8,
+      "requested_by": 2,
+      "approved_by": 3,
+      "status": "Approved",
+      "remarks": "Required for compliance",
+      "requested_at": "2026-06-05T11:00:00Z",
+      "actioned_at": "2026-06-05T12:00:00Z"
+    },
+    {
+      "id": 5,
+      "rfq_id": "RFQ-2026-005",
+      "quotation_id": 5,
+      "requested_by": 2,
+      "approved_by": 3,
+      "status": "Rejected",
+      "remarks": "Too expensive, find another vendor",
+      "requested_at": "2026-06-04T12:00:00Z",
+      "actioned_at": "2026-06-04T13:00:00Z"
+    },
+    {
+      "id": 6,
+      "rfq_id": "RFQ-2026-004",
+      "quotation_id": 9,
+      "requested_by": 2,
+      "approved_by": null,
+      "status": "Pending",
+      "remarks": "Please review green packaging solution",
+      "requested_at": "2026-06-06T10:00:00Z",
+      "actioned_at": null
+    },
+    {
+      "id": 7,
+      "rfq_id": "RFQ-2026-010",
+      "quotation_id": 10,
+      "requested_by": 2,
+      "approved_by": 3,
+      "status": "Approved",
+      "remarks": "Better safety rating for racks",
+      "requested_at": "2026-06-06T11:00:00Z",
+      "actioned_at": "2026-06-06T11:30:00Z"
+    },
+    {
+      "id": 8,
+      "rfq_id": "RFQ-2026-012",
+      "quotation_id": 12,
+      "requested_by": 2,
+      "approved_by": 3,
+      "status": "Approved",
+      "remarks": "Critical for company security",
+      "requested_at": "2026-06-06T13:15:00Z",
+      "actioned_at": "2026-06-06T13:45:00Z"
+    },
+    {
+      "id": 9,
+      "rfq_id": "RFQ-2026-013",
+      "quotation_id": 13,
+      "requested_by": 2,
+      "approved_by": null,
+      "status": "Pending",
+      "remarks": "Routine vehicle servicing request",
+      "requested_at": "2026-06-06T14:15:00Z",
+      "actioned_at": null
+    },
+    {
+      "id": 10,
+      "rfq_id": "RFQ-2026-015",
+      "quotation_id": 14,
+      "requested_by": 2,
+      "approved_by": 1,
+      "status": "Approved",
+      "remarks": "Helpdesk SLA met, proceed",
+      "requested_at": "2026-06-06T15:45:00Z",
+      "actioned_at": "2026-06-06T16:15:00Z"
+    },
+    {
+      "id": 11,
+      "rfq_id": "RFQ-2026-009",
+      "quotation_id": 15,
+      "requested_by": 2,
+      "approved_by": null,
+      "status": "Pending",
+      "remarks": "Marketing retainer, high cost",
+      "requested_at": "2026-06-06T16:30:00Z",
+      "actioned_at": null
+    }
+  ],
+  "purchase_orders": [
+    {
+      "id": "PO-2026-001",
+      "rfq_id": "RFQ-2026-007",
+      "quotation_id": 7,
+      "vendor_id": 4,
+      "approval_id": 3,
+      "subtotal": 12000,
+      "gst_amount": 2160,
+      "total_amount": 14160,
+      "status": "Invoiced",
+      "po_date": "2026-06-05T10:30:00Z",
+      "delivery_date": "2026-06-26"
+    },
+    {
+      "id": "PO-2026-002",
+      "rfq_id": "RFQ-2026-008",
+      "quotation_id": 8,
+      "vendor_id": 1,
+      "approval_id": 4,
+      "subtotal": 25000,
+      "gst_amount": 4500,
+      "total_amount": 29500,
+      "status": "Invoiced",
+      "po_date": "2026-06-05T12:30:00Z",
+      "delivery_date": "2026-07-05"
+    },
+    {
+      "id": "PO-2026-003",
+      "rfq_id": "RFQ-2026-002",
+      "quotation_id": 2,
+      "vendor_id": 2,
+      "approval_id": 1,
+      "subtotal": 25000,
+      "gst_amount": 4500,
+      "total_amount": 29500,
+      "status": "Completed",
+      "po_date": "2026-05-28T10:30:00Z",
+      "delivery_date": "2026-06-02"
+    },
+    {
+      "id": "PO-2026-004",
+      "rfq_id": "RFQ-2026-001",
+      "quotation_id": 1,
+      "vendor_id": 1,
+      "approval_id": 1,
+      "subtotal": 1450000,
+      "gst_amount": 261000,
+      "total_amount": 1711000,
+      "status": "Active",
+      "po_date": "2026-06-01T10:30:00Z",
+      "delivery_date": "2026-06-08"
+    },
+    {
+      "id": "PO-2026-005",
+      "rfq_id": "RFQ-2026-006",
+      "quotation_id": 6,
+      "vendor_id": 2,
+      "approval_id": 2,
+      "subtotal": 5000,
+      "gst_amount": 900,
+      "total_amount": 5900,
+      "status": "Active",
+      "po_date": "2026-06-06T09:30:00Z",
+      "delivery_date": "2026-06-13"
+    },
+    {
+      "id": "PO-2026-006",
+      "rfq_id": "RFQ-2026-004",
+      "quotation_id": 9,
+      "vendor_id": 6,
+      "approval_id": 6,
+      "subtotal": 7500,
+      "gst_amount": 1350,
+      "total_amount": 8850,
+      "status": "Invoiced",
+      "po_date": "2026-06-06T11:00:00Z",
+      "delivery_date": "2026-06-20"
+    },
+    {
+      "id": "PO-2026-007",
+      "rfq_id": "RFQ-2026-010",
+      "quotation_id": 10,
+      "vendor_id": 5,
+      "approval_id": 7,
+      "subtotal": 45000,
+      "gst_amount": 8100,
+      "total_amount": 53100,
+      "status": "Active",
+      "po_date": "2026-06-06T12:00:00Z",
+      "delivery_date": "2026-07-21"
+    },
+    {
+      "id": "PO-2026-008",
+      "rfq_id": "RFQ-2026-012",
+      "quotation_id": 12,
+      "vendor_id": 7,
+      "approval_id": 8,
+      "subtotal": 15000,
+      "gst_amount": 2700,
+      "total_amount": 17700,
+      "status": "Invoiced",
+      "po_date": "2026-06-06T14:00:00Z",
+      "delivery_date": "2026-06-07"
+    },
+    {
+      "id": "PO-2026-009",
+      "rfq_id": "RFQ-2026-015",
+      "quotation_id": 14,
+      "vendor_id": 7,
+      "approval_id": 10,
+      "subtotal": 22000,
+      "gst_amount": 3960,
+      "total_amount": 25960,
+      "status": "Invoiced",
+      "po_date": "2026-06-06T16:30:00Z",
+      "delivery_date": "2026-06-20"
+    }
+  ],
+  "invoices": [
+    {
+      "id": "INV-2026-001",
+      "po_id": "PO-2026-001",
+      "vendor_id": 4,
+      "subtotal": 12000,
+      "gst_amount": 2160,
+      "total_amount": 14160,
+      "status": "Generated",
+      "generated_at": "2026-06-06T08:00:00Z"
+    },
+    {
+      "id": "INV-2026-002",
+      "po_id": "PO-2026-002",
+      "vendor_id": 1,
+      "subtotal": 25000,
+      "gst_amount": 4500,
+      "total_amount": 29500,
+      "status": "Sent",
+      "generated_at": "2026-06-06T09:00:00Z"
+    },
+    {
+      "id": "INV-2026-003",
+      "po_id": "PO-2026-003",
+      "vendor_id": 2,
+      "subtotal": 25000,
+      "gst_amount": 4500,
+      "total_amount": 29500,
+      "status": "Paid",
+      "generated_at": "2026-06-02T10:00:00Z"
+    },
+    {
+      "id": "INV-2026-004",
+      "po_id": "PO-2026-001",
+      "vendor_id": 4,
+      "subtotal": 6000,
+      "gst_amount": 1080,
+      "total_amount": 7080,
+      "status": "Paid",
+      "generated_at": "2026-05-15T08:00:00Z"
+    },
+    {
+      "id": "INV-2026-005",
+      "po_id": "PO-2026-002",
+      "vendor_id": 1,
+      "subtotal": 12500,
+      "gst_amount": 2250,
+      "total_amount": 14750,
+      "status": "Sent",
+      "generated_at": "2026-05-20T08:00:00Z"
+    },
+    {
+      "id": "INV-2026-006",
+      "po_id": "PO-2026-006",
+      "vendor_id": 6,
+      "subtotal": 7500,
+      "gst_amount": 1350,
+      "total_amount": 8850,
+      "status": "Generated",
+      "generated_at": "2026-06-06T12:00:00Z"
+    },
+    {
+      "id": "INV-2026-007",
+      "po_id": "PO-2026-008",
+      "vendor_id": 7,
+      "subtotal": 15000,
+      "gst_amount": 2700,
+      "total_amount": 17700,
+      "status": "Sent",
+      "generated_at": "2026-06-06T14:30:00Z"
+    },
+    {
+      "id": "INV-2026-008",
+      "po_id": "PO-2026-009",
+      "vendor_id": 7,
+      "subtotal": 22000,
+      "gst_amount": 3960,
+      "total_amount": 25960,
+      "status": "Generated",
+      "generated_at": "2026-06-06T17:00:00Z"
+    },
+    {
+      "id": "INV-2026-009",
+      "po_id": "PO-2026-007",
+      "vendor_id": 5,
+      "subtotal": 22500,
+      "gst_amount": 4050,
+      "total_amount": 26550,
+      "status": "Paid",
+      "generated_at": "2026-06-06T12:30:00Z"
+    }
+  ],
+  "activity_log": [
+    {
+      "id": 14,
+      "user_id": 1,
+      "action": "User sign out completed",
+      "entity_type": "vendor",
+      "entity_id": "1",
+      "details": "Signed out user session",
+      "created_at": "2026-06-06T08:05:02.940Z"
+    },
+    {
+      "id": 13,
+      "user_id": 1,
+      "action": "User login successful",
+      "entity_type": "vendor",
+      "entity_id": "1",
+      "details": "Sarah Connor (Admin) logged in successfully",
+      "created_at": "2026-06-06T08:03:18.438Z"
+    },
+    {
+      "id": 12,
+      "user_id": 4,
+      "action": "User sign out completed",
+      "entity_type": "vendor",
+      "entity_id": "4",
+      "details": "Signed out user session",
+      "created_at": "2026-06-06T08:03:17.579Z"
+    },
+    {
+      "id": 11,
+      "user_id": 4,
+      "action": "User login successful",
+      "entity_type": "vendor",
+      "entity_id": "4",
+      "details": "Silicon Systems Account logged in successfully",
+      "created_at": "2026-06-06T08:02:32.333Z"
+    },
+    {
+      "id": 10,
+      "user_id": 1,
+      "action": "User sign out completed",
+      "entity_type": "vendor",
+      "entity_id": "1",
+      "details": "Signed out user session",
+      "created_at": "2026-06-06T08:02:30.979Z"
+    },
+    {
+      "id": 9,
+      "user_id": 1,
+      "action": "User login successful",
+      "entity_type": "vendor",
+      "entity_id": "1",
+      "details": "Sarah Connor (Admin) logged in successfully",
+      "created_at": "2026-06-06T08:02:18.553Z"
+    },
+    {
+      "id": 1,
+      "user_id": 2,
+      "action": "User authentication login completed",
+      "entity_type": "vendor",
+      "entity_id": "2",
+      "details": "Officer Bob logged in from 192.168.1.5",
+      "created_at": "2026-05-20T09:00:00Z"
+    },
+    {
+      "id": 2,
+      "user_id": 2,
+      "action": "Created RFQ",
+      "entity_type": "rfq",
+      "entity_id": "RFQ-2026-001",
+      "details": "Created Elite Laptop RFQ with target budget 1,500,000",
+      "created_at": "2026-05-20T10:15:00Z"
+    },
+    {
+      "id": 3,
+      "user_id": 2,
+      "action": "Proposed Vendor Assignment",
+      "entity_type": "vendor",
+      "entity_id": "1",
+      "details": "Assigned Silicon Systems and Micro Circuits to RFQ-2026-001",
+      "created_at": "2026-05-20T10:20:00Z"
+    },
+    {
+      "id": 4,
+      "user_id": 4,
+      "action": "Quotation Submitted",
+      "entity_type": "quotation",
+      "entity_id": "1",
+      "details": "Silicon Systems submitted quotation layout with value $1,450,000",
+      "created_at": "2026-05-24T09:12:00Z"
+    },
+    {
+      "id": 5,
+      "user_id": 2,
+      "action": "Created RFQ",
+      "entity_type": "rfq",
+      "entity_id": "RFQ-2026-002",
+      "details": "Created Corporate Stationery Supply RFQ",
+      "created_at": "2026-05-22T11:30:00Z"
+    },
+    {
+      "id": 6,
+      "user_id": 2,
+      "action": "Proposed Vendor Assignment",
+      "entity_type": "vendor",
+      "entity_id": "2",
+      "details": "Assigned Paper & More to RFQ-2026-002",
+      "created_at": "2026-05-22T11:35:00Z"
+    },
+    {
+      "id": 7,
+      "user_id": 2,
+      "action": "Created RFQ",
+      "entity_type": "rfq",
+      "entity_id": "RFQ-2026-003",
+      "details": "Created Freight Service logistics RFQ",
+      "created_at": "2026-05-25T14:00:00Z"
+    },
+    {
+      "id": 8,
+      "user_id": 2,
+      "action": "Requested Review Approval",
+      "entity_type": "approval",
+      "entity_id": "1",
+      "details": "Submitted approval requested for Silicon Systems quote on RFQ-2026-001",
+      "created_at": "2026-05-30T11:00:00Z"
+    }
+  ],
+  "contracts": [
+    {
+      "id": "CON-2026-001",
+      "vendor_id": 1,
+      "title": "Annual Hardware Supply",
+      "description": "Main hardware vendor",
+      "start_date": "2026-01-01",
+      "expiry_date": "2026-12-31",
+      "value": 2000000,
+      "status": "Active",
+      "created_by": 1,
+      "created_at": "2026-01-01T10:00:00Z"
+    }
+  ],
+  "budgets": [
+    {
+      "id": 1,
+      "department": "Engineering",
+      "fiscal_year": 2026,
+      "quarter": 2,
+      "allocated": 500000,
+      "utilized": 350000,
+      "created_by": 1,
+      "updated_at": "2026-05-01T10:00:00Z"
+    },
+    {
+      "id": 2,
+      "department": "Operations",
+      "fiscal_year": 2026,
+      "quarter": 2,
+      "allocated": 200000,
+      "utilized": 190000,
+      "created_by": 1,
+      "updated_at": "2026-05-01T10:00:00Z"
+    },
+    {
+      "id": 3,
+      "department": "Marketing",
+      "fiscal_year": 2026,
+      "quarter": 2,
+      "allocated": 150000,
+      "utilized": 50000,
+      "created_by": 1,
+      "updated_at": "2026-05-01T10:00:00Z"
+    }
+  ],
+  "permissions": [
+    {
+      "id": 1,
+      "code": "vendor.view_all",
+      "label": "View All Vendors",
+      "category": "vendors",
+      "is_active": 1
+    },
+    {
+      "id": 2,
+      "code": "vendor.view_own",
+      "label": "View Own Profile",
+      "category": "vendors",
+      "is_active": 1
+    },
+    {
+      "id": 3,
+      "code": "vendor.create",
+      "label": "Register Vendor",
+      "category": "vendors",
+      "is_active": 1
+    },
+    {
+      "id": 4,
+      "code": "vendor.edit_own",
+      "label": "Edit Own Profile",
+      "category": "vendors",
+      "is_active": 1
+    },
+    {
+      "id": 5,
+      "code": "vendor.edit_any",
+      "label": "Edit Any Vendor",
+      "category": "vendors",
+      "is_active": 1
+    },
+    {
+      "id": 6,
+      "code": "vendor.change_status",
+      "label": "Change Vendor Status",
+      "category": "vendors",
+      "is_active": 1
+    },
+    {
+      "id": 7,
+      "code": "vendor.change_risk",
+      "label": "Change Risk Level",
+      "category": "vendors",
+      "is_active": 1
+    },
+    {
+      "id": 8,
+      "code": "vendor.blacklist",
+      "label": "Blacklist Vendor",
+      "category": "vendors",
+      "is_active": 1
+    },
+    {
+      "id": 9,
+      "code": "vendor.onboard",
+      "label": "Approve Vendor Onboarding",
+      "category": "vendors",
+      "is_active": 1
+    },
+    {
+      "id": 10,
+      "code": "vendor.upload_docs",
+      "label": "Upload Own Documents",
+      "category": "vendors",
+      "is_active": 1
+    },
+    {
+      "id": 11,
+      "code": "vendor.verify_docs",
+      "label": "Verify Vendor Documents",
+      "category": "vendors",
+      "is_active": 1
+    },
+    {
+      "id": 12,
+      "code": "vendor.rate",
+      "label": "Rate Vendor Post-PO",
+      "category": "vendors",
+      "is_active": 1
+    },
+    {
+      "id": 13,
+      "code": "rfq.view_all",
+      "label": "View All RFQs",
+      "category": "rfq",
+      "is_active": 1
+    },
+    {
+      "id": 14,
+      "code": "rfq.view_assigned",
+      "label": "View Assigned RFQs",
+      "category": "rfq",
+      "is_active": 1
+    },
+    {
+      "id": 15,
+      "code": "rfq.create",
+      "label": "Create RFQ",
+      "category": "rfq",
+      "is_active": 1
+    },
+    {
+      "id": 16,
+      "code": "rfq.edit_own",
+      "label": "Edit Own RFQ",
+      "category": "rfq",
+      "is_active": 1
+    },
+    {
+      "id": 17,
+      "code": "rfq.edit_any",
+      "label": "Edit Any RFQ",
+      "category": "rfq",
+      "is_active": 1
+    },
+    {
+      "id": 18,
+      "code": "rfq.cancel",
+      "label": "Cancel RFQ",
+      "category": "rfq",
+      "is_active": 1
+    },
+    {
+      "id": 19,
+      "code": "rfq.assign_vendors",
+      "label": "Assign Vendors to RFQ",
+      "category": "rfq",
+      "is_active": 1
+    },
+    {
+      "id": 20,
+      "code": "rfq.save_template",
+      "label": "Save RFQ as Template",
+      "category": "rfq",
+      "is_active": 1
+    },
+    {
+      "id": 21,
+      "code": "rfq.kanban_override",
+      "label": "Kanban Status Override",
+      "category": "rfq",
+      "is_active": 1
+    },
+    {
+      "id": 22,
+      "code": "quote.view_all",
+      "label": "View All Quotations",
+      "category": "quotations",
+      "is_active": 1
+    },
+    {
+      "id": 23,
+      "code": "quote.submit",
+      "label": "Submit Quotation",
+      "category": "quotations",
+      "is_active": 1
+    },
+    {
+      "id": 24,
+      "code": "quote.edit_own",
+      "label": "Edit Own Quotation",
+      "category": "quotations",
+      "is_active": 1
+    },
+    {
+      "id": 25,
+      "code": "quote.counter_offer",
+      "label": "Submit Counter-Offer",
+      "category": "quotations",
+      "is_active": 1
+    },
+    {
+      "id": 26,
+      "code": "quote.view_competitor",
+      "label": "View Competitor Pricing",
+      "category": "quotations",
+      "is_active": 1
+    },
+    {
+      "id": 27,
+      "code": "quote.compare",
+      "label": "Compare Quotations",
+      "category": "quotations",
+      "is_active": 1
+    },
+    {
+      "id": 28,
+      "code": "quote.select_winner",
+      "label": "Select Winning Quotation",
+      "category": "quotations",
+      "is_active": 1
+    },
+    {
+      "id": 29,
+      "code": "quote.view_own_history",
+      "label": "View Own Bid History",
+      "category": "quotations",
+      "is_active": 1
+    },
+    {
+      "id": 30,
+      "code": "approval.view_all",
+      "label": "View All Approvals",
+      "category": "approvals",
+      "is_active": 1
+    },
+    {
+      "id": 31,
+      "code": "approval.request",
+      "label": "Request Approval",
+      "category": "approvals",
+      "is_active": 1
+    },
+    {
+      "id": 32,
+      "code": "approval.approve_l1",
+      "label": "Approve L1 (<=1L)",
+      "category": "approvals",
+      "is_active": 1
+    },
+    {
+      "id": 33,
+      "code": "approval.approve_l2",
+      "label": "Approve L2 (1L-10L)",
+      "category": "approvals",
+      "is_active": 1
+    },
+    {
+      "id": 34,
+      "code": "approval.approve_l3",
+      "label": "Approve L3 (>10L)",
+      "category": "approvals",
+      "is_active": 1
+    },
+    {
+      "id": 35,
+      "code": "approval.override",
+      "label": "Override Any Approval",
+      "category": "approvals",
+      "is_active": 1
+    },
+    {
+      "id": 36,
+      "code": "approval.delegate",
+      "label": "Delegate Approval Authority",
+      "category": "approvals",
+      "is_active": 1
+    },
+    {
+      "id": 37,
+      "code": "po.view_all",
+      "label": "View All POs",
+      "category": "purchase_orders",
+      "is_active": 1
+    },
+    {
+      "id": 38,
+      "code": "po.view_own",
+      "label": "View Own Vendor POs",
+      "category": "purchase_orders",
+      "is_active": 1
+    },
+    {
+      "id": 39,
+      "code": "po.generate",
+      "label": "Generate PO",
+      "category": "purchase_orders",
+      "is_active": 1
+    },
+    {
+      "id": 40,
+      "code": "po.cancel",
+      "label": "Cancel PO",
+      "category": "purchase_orders",
+      "is_active": 1
+    },
+    {
+      "id": 41,
+      "code": "invoice.view_all",
+      "label": "View All Invoices",
+      "category": "invoices",
+      "is_active": 1
+    },
+    {
+      "id": 42,
+      "code": "invoice.view_own",
+      "label": "View Own Invoices",
+      "category": "invoices",
+      "is_active": 1
+    },
+    {
+      "id": 43,
+      "code": "invoice.generate",
+      "label": "Generate Invoice",
+      "category": "invoices",
+      "is_active": 1
+    },
+    {
+      "id": 44,
+      "code": "invoice.download_pdf",
+      "label": "Download Invoice PDF",
+      "category": "invoices",
+      "is_active": 1
+    },
+    {
+      "id": 45,
+      "code": "invoice.send_email",
+      "label": "Send Invoice via Email",
+      "category": "invoices",
+      "is_active": 1
+    },
+    {
+      "id": 46,
+      "code": "invoice.mark_paid",
+      "label": "Mark Invoice Paid",
+      "category": "invoices",
+      "is_active": 1
+    },
+    {
+      "id": 47,
+      "code": "contract.view_all",
+      "label": "View All Contracts",
+      "category": "contracts",
+      "is_active": 1
+    },
+    {
+      "id": 48,
+      "code": "contract.view_own",
+      "label": "View Own Contracts",
+      "category": "contracts",
+      "is_active": 1
+    },
+    {
+      "id": 49,
+      "code": "contract.create",
+      "label": "Create Contract",
+      "category": "contracts",
+      "is_active": 1
+    },
+    {
+      "id": 50,
+      "code": "contract.renew",
+      "label": "Renew / Terminate Contract",
+      "category": "contracts",
+      "is_active": 1
+    },
+    {
+      "id": 51,
+      "code": "budget.view",
+      "label": "View Budgets",
+      "category": "budgets",
+      "is_active": 1
+    },
+    {
+      "id": 52,
+      "code": "budget.manage",
+      "label": "Create/Edit Budgets",
+      "category": "budgets",
+      "is_active": 1
+    },
+    {
+      "id": 53,
+      "code": "budget.override_breach",
+      "label": "Override Budget Breach",
+      "category": "budgets",
+      "is_active": 1
+    },
+    {
+      "id": 54,
+      "code": "report.full",
+      "label": "View Full Analytics",
+      "category": "reports",
+      "is_active": 1
+    },
+    {
+      "id": 55,
+      "code": "report.export",
+      "label": "Export Reports",
+      "category": "reports",
+      "is_active": 1
+    },
+    {
+      "id": 56,
+      "code": "report.own",
+      "label": "View Own Analytics",
+      "category": "reports",
+      "is_active": 1
+    },
+    {
+      "id": 57,
+      "code": "message.send_internal",
+      "label": "Send Internal Messages",
+      "category": "messages",
+      "is_active": 1
+    },
+    {
+      "id": 58,
+      "code": "message.send_external",
+      "label": "Send Vendor-Visible Msgs",
+      "category": "messages",
+      "is_active": 1
+    },
+    {
+      "id": 59,
+      "code": "message.reply_own",
+      "label": "Reply on Own RFQ Thread",
+      "category": "messages",
+      "is_active": 1
+    },
+    {
+      "id": 60,
+      "code": "admin.users",
+      "label": "User Management",
+      "category": "admin",
+      "is_active": 1
+    },
+    {
+      "id": 61,
+      "code": "admin.settings",
+      "label": "System Settings",
+      "category": "admin",
+      "is_active": 1
+    },
+    {
+      "id": 62,
+      "code": "admin.audit",
+      "label": "View Full Audit Trail",
+      "category": "admin",
+      "is_active": 1
+    },
+    {
+      "id": 63,
+      "code": "admin.permissions",
+      "label": "Edit Permission Matrix",
+      "category": "admin",
+      "is_active": 1
+    },
+    {
+      "id": 64,
+      "code": "admin.impersonate",
+      "label": "Impersonate User",
+      "category": "admin",
+      "is_active": 1
+    },
+    {
+      "id": 65,
+      "code": "admin.temp_access",
+      "label": "Grant Temporary Access",
+      "category": "admin",
+      "is_active": 1
+    },
+    {
+      "id": 66,
+      "code": "admin.security_log",
+      "label": "View Security Violations",
+      "category": "admin",
+      "is_active": 1
+    }
+  ],
+  "role_permissions": [
+    {
+      "role": "admin",
+      "permission": "vendor.view_all",
+      "access_type": "full"
+    },
+    {
+      "role": "admin",
+      "permission": "vendor.view_own",
+      "access_type": "full"
+    },
+    {
+      "role": "admin",
+      "permission": "vendor.create",
+      "access_type": "full"
+    },
+    {
+      "role": "admin",
+      "permission": "vendor.edit_own",
+      "access_type": "full"
+    },
+    {
+      "role": "admin",
+      "permission": "vendor.edit_any",
+      "access_type": "full"
+    },
+    {
+      "role": "admin",
+      "permission": "vendor.change_status",
+      "access_type": "full"
+    },
+    {
+      "role": "admin",
+      "permission": "vendor.change_risk",
+      "access_type": "full"
+    },
+    {
+      "role": "admin",
+      "permission": "vendor.blacklist",
+      "access_type": "full"
+    },
+    {
+      "role": "admin",
+      "permission": "vendor.onboard",
+      "access_type": "full"
+    },
+    {
+      "role": "admin",
+      "permission": "vendor.upload_docs",
+      "access_type": "full"
+    },
+    {
+      "role": "admin",
+      "permission": "vendor.verify_docs",
+      "access_type": "full"
+    },
+    {
+      "role": "admin",
+      "permission": "vendor.rate",
+      "access_type": "full"
+    },
+    {
+      "role": "admin",
+      "permission": "rfq.view_all",
+      "access_type": "full"
+    },
+    {
+      "role": "admin",
+      "permission": "rfq.view_assigned",
+      "access_type": "full"
+    },
+    {
+      "role": "admin",
+      "permission": "rfq.create",
+      "access_type": "full"
+    },
+    {
+      "role": "admin",
+      "permission": "rfq.edit_own",
+      "access_type": "full"
+    },
+    {
+      "role": "admin",
+      "permission": "rfq.edit_any",
+      "access_type": "full"
+    },
+    {
+      "role": "admin",
+      "permission": "rfq.cancel",
+      "access_type": "full"
+    },
+    {
+      "role": "admin",
+      "permission": "rfq.assign_vendors",
+      "access_type": "full"
+    },
+    {
+      "role": "admin",
+      "permission": "rfq.save_template",
+      "access_type": "full"
+    },
+    {
+      "role": "admin",
+      "permission": "rfq.kanban_override",
+      "access_type": "full"
+    },
+    {
+      "role": "admin",
+      "permission": "quote.view_all",
+      "access_type": "full"
+    },
+    {
+      "role": "admin",
+      "permission": "quote.submit",
+      "access_type": "full"
+    },
+    {
+      "role": "admin",
+      "permission": "quote.edit_own",
+      "access_type": "full"
+    },
+    {
+      "role": "admin",
+      "permission": "quote.counter_offer",
+      "access_type": "full"
+    },
+    {
+      "role": "admin",
+      "permission": "quote.view_competitor",
+      "access_type": "full"
+    },
+    {
+      "role": "admin",
+      "permission": "quote.compare",
+      "access_type": "full"
+    },
+    {
+      "role": "admin",
+      "permission": "quote.select_winner",
+      "access_type": "full"
+    },
+    {
+      "role": "admin",
+      "permission": "quote.view_own_history",
+      "access_type": "full"
+    },
+    {
+      "role": "admin",
+      "permission": "approval.view_all",
+      "access_type": "full"
+    },
+    {
+      "role": "admin",
+      "permission": "approval.request",
+      "access_type": "full"
+    },
+    {
+      "role": "admin",
+      "permission": "approval.approve_l1",
+      "access_type": "full"
+    },
+    {
+      "role": "admin",
+      "permission": "approval.approve_l2",
+      "access_type": "full"
+    },
+    {
+      "role": "admin",
+      "permission": "approval.approve_l3",
+      "access_type": "full"
+    },
+    {
+      "role": "admin",
+      "permission": "approval.override",
+      "access_type": "full"
+    },
+    {
+      "role": "admin",
+      "permission": "approval.delegate",
+      "access_type": "full"
+    },
+    {
+      "role": "admin",
+      "permission": "po.view_all",
+      "access_type": "full"
+    },
+    {
+      "role": "admin",
+      "permission": "po.view_own",
+      "access_type": "full"
+    },
+    {
+      "role": "admin",
+      "permission": "po.generate",
+      "access_type": "full"
+    },
+    {
+      "role": "admin",
+      "permission": "po.cancel",
+      "access_type": "full"
+    },
+    {
+      "role": "admin",
+      "permission": "invoice.view_all",
+      "access_type": "full"
+    },
+    {
+      "role": "admin",
+      "permission": "invoice.view_own",
+      "access_type": "full"
+    },
+    {
+      "role": "admin",
+      "permission": "invoice.generate",
+      "access_type": "full"
+    },
+    {
+      "role": "admin",
+      "permission": "invoice.download_pdf",
+      "access_type": "full"
+    },
+    {
+      "role": "admin",
+      "permission": "invoice.send_email",
+      "access_type": "full"
+    },
+    {
+      "role": "admin",
+      "permission": "invoice.mark_paid",
+      "access_type": "full"
+    },
+    {
+      "role": "admin",
+      "permission": "contract.view_all",
+      "access_type": "full"
+    },
+    {
+      "role": "admin",
+      "permission": "contract.view_own",
+      "access_type": "full"
+    },
+    {
+      "role": "admin",
+      "permission": "contract.create",
+      "access_type": "full"
+    },
+    {
+      "role": "admin",
+      "permission": "contract.renew",
+      "access_type": "full"
+    },
+    {
+      "role": "admin",
+      "permission": "budget.view",
+      "access_type": "full"
+    },
+    {
+      "role": "admin",
+      "permission": "budget.manage",
+      "access_type": "full"
+    },
+    {
+      "role": "admin",
+      "permission": "budget.override_breach",
+      "access_type": "full"
+    },
+    {
+      "role": "admin",
+      "permission": "report.full",
+      "access_type": "full"
+    },
+    {
+      "role": "admin",
+      "permission": "report.export",
+      "access_type": "full"
+    },
+    {
+      "role": "admin",
+      "permission": "report.own",
+      "access_type": "full"
+    },
+    {
+      "role": "admin",
+      "permission": "message.send_internal",
+      "access_type": "full"
+    },
+    {
+      "role": "admin",
+      "permission": "message.send_external",
+      "access_type": "full"
+    },
+    {
+      "role": "admin",
+      "permission": "message.reply_own",
+      "access_type": "full"
+    },
+    {
+      "role": "admin",
+      "permission": "admin.users",
+      "access_type": "full"
+    },
+    {
+      "role": "admin",
+      "permission": "admin.settings",
+      "access_type": "full"
+    },
+    {
+      "role": "admin",
+      "permission": "admin.audit",
+      "access_type": "full"
+    },
+    {
+      "role": "admin",
+      "permission": "admin.permissions",
+      "access_type": "full"
+    },
+    {
+      "role": "admin",
+      "permission": "admin.impersonate",
+      "access_type": "full"
+    },
+    {
+      "role": "admin",
+      "permission": "admin.temp_access",
+      "access_type": "full"
+    },
+    {
+      "role": "admin",
+      "permission": "admin.security_log",
+      "access_type": "full"
+    },
+    {
+      "role": "manager",
+      "permission": "vendor.view_all",
+      "access_type": "read"
+    },
+    {
+      "role": "manager",
+      "permission": "vendor.change_risk",
+      "access_type": "full"
+    },
+    {
+      "role": "manager",
+      "permission": "rfq.view_all",
+      "access_type": "read"
+    },
+    {
+      "role": "manager",
+      "permission": "quote.view_all",
+      "access_type": "read"
+    },
+    {
+      "role": "manager",
+      "permission": "quote.view_competitor",
+      "access_type": "full"
+    },
+    {
+      "role": "manager",
+      "permission": "quote.compare",
+      "access_type": "full"
+    },
+    {
+      "role": "manager",
+      "permission": "approval.view_all",
+      "access_type": "full"
+    },
+    {
+      "role": "manager",
+      "permission": "approval.approve_l1",
+      "access_type": "full"
+    },
+    {
+      "role": "manager",
+      "permission": "approval.approve_l2",
+      "access_type": "full"
+    },
+    {
+      "role": "manager",
+      "permission": "approval.approve_l3",
+      "access_type": "full"
+    },
+    {
+      "role": "manager",
+      "permission": "approval.delegate",
+      "access_type": "full"
+    },
+    {
+      "role": "manager",
+      "permission": "po.view_all",
+      "access_type": "read"
+    },
+    {
+      "role": "manager",
+      "permission": "invoice.view_all",
+      "access_type": "read"
+    },
+    {
+      "role": "manager",
+      "permission": "invoice.download_pdf",
+      "access_type": "full"
+    },
+    {
+      "role": "manager",
+      "permission": "contract.view_all",
+      "access_type": "read"
+    },
+    {
+      "role": "manager",
+      "permission": "budget.view",
+      "access_type": "full"
+    },
+    {
+      "role": "manager",
+      "permission": "budget.override_breach",
+      "access_type": "full"
+    },
+    {
+      "role": "manager",
+      "permission": "report.full",
+      "access_type": "full"
+    },
+    {
+      "role": "manager",
+      "permission": "report.export",
+      "access_type": "full"
+    },
+    {
+      "role": "manager",
+      "permission": "message.send_internal",
+      "access_type": "full"
+    },
+    {
+      "role": "procurement_officer",
+      "permission": "vendor.view_all",
+      "access_type": "read"
+    },
+    {
+      "role": "procurement_officer",
+      "permission": "vendor.create",
+      "access_type": "full"
+    },
+    {
+      "role": "procurement_officer",
+      "permission": "vendor.rate",
+      "access_type": "full"
+    },
+    {
+      "role": "procurement_officer",
+      "permission": "rfq.view_all",
+      "access_type": "full"
+    },
+    {
+      "role": "procurement_officer",
+      "permission": "rfq.create",
+      "access_type": "full"
+    },
+    {
+      "role": "procurement_officer",
+      "permission": "rfq.edit_own",
+      "access_type": "full"
+    },
+    {
+      "role": "procurement_officer",
+      "permission": "rfq.cancel",
+      "access_type": "own"
+    },
+    {
+      "role": "procurement_officer",
+      "permission": "rfq.assign_vendors",
+      "access_type": "full"
+    },
+    {
+      "role": "procurement_officer",
+      "permission": "rfq.save_template",
+      "access_type": "full"
+    },
+    {
+      "role": "procurement_officer",
+      "permission": "quote.view_all",
+      "access_type": "full"
+    },
+    {
+      "role": "procurement_officer",
+      "permission": "quote.view_competitor",
+      "access_type": "full"
+    },
+    {
+      "role": "procurement_officer",
+      "permission": "quote.compare",
+      "access_type": "full"
+    },
+    {
+      "role": "procurement_officer",
+      "permission": "quote.select_winner",
+      "access_type": "full"
+    },
+    {
+      "role": "procurement_officer",
+      "permission": "approval.view_all",
+      "access_type": "read"
+    },
+    {
+      "role": "procurement_officer",
+      "permission": "approval.request",
+      "access_type": "full"
+    },
+    {
+      "role": "procurement_officer",
+      "permission": "po.view_all",
+      "access_type": "full"
+    },
+    {
+      "role": "procurement_officer",
+      "permission": "po.generate",
+      "access_type": "full"
+    },
+    {
+      "role": "procurement_officer",
+      "permission": "invoice.view_all",
+      "access_type": "full"
+    },
+    {
+      "role": "procurement_officer",
+      "permission": "invoice.generate",
+      "access_type": "full"
+    },
+    {
+      "role": "procurement_officer",
+      "permission": "invoice.download_pdf",
+      "access_type": "full"
+    },
+    {
+      "role": "procurement_officer",
+      "permission": "invoice.send_email",
+      "access_type": "full"
+    },
+    {
+      "role": "procurement_officer",
+      "permission": "invoice.mark_paid",
+      "access_type": "full"
+    },
+    {
+      "role": "procurement_officer",
+      "permission": "contract.view_all",
+      "access_type": "read"
+    },
+    {
+      "role": "procurement_officer",
+      "permission": "contract.create",
+      "access_type": "full"
+    },
+    {
+      "role": "procurement_officer",
+      "permission": "contract.renew",
+      "access_type": "full"
+    },
+    {
+      "role": "procurement_officer",
+      "permission": "budget.view",
+      "access_type": "read"
+    },
+    {
+      "role": "procurement_officer",
+      "permission": "report.full",
+      "access_type": "read"
+    },
+    {
+      "role": "procurement_officer",
+      "permission": "report.export",
+      "access_type": "full"
+    },
+    {
+      "role": "procurement_officer",
+      "permission": "message.send_internal",
+      "access_type": "full"
+    },
+    {
+      "role": "procurement_officer",
+      "permission": "message.send_external",
+      "access_type": "full"
+    },
+    {
+      "role": "vendor",
+      "permission": "vendor.view_own",
+      "access_type": "own"
+    },
+    {
+      "role": "vendor",
+      "permission": "vendor.edit_own",
+      "access_type": "own"
+    },
+    {
+      "role": "vendor",
+      "permission": "vendor.upload_docs",
+      "access_type": "own"
+    },
+    {
+      "role": "vendor",
+      "permission": "rfq.view_assigned",
+      "access_type": "own"
+    },
+    {
+      "role": "vendor",
+      "permission": "quote.submit",
+      "access_type": "own"
+    },
+    {
+      "role": "vendor",
+      "permission": "quote.edit_own",
+      "access_type": "own"
+    },
+    {
+      "role": "vendor",
+      "permission": "quote.counter_offer",
+      "access_type": "own"
+    },
+    {
+      "role": "vendor",
+      "permission": "quote.view_own_history",
+      "access_type": "own"
+    },
+    {
+      "role": "vendor",
+      "permission": "po.view_own",
+      "access_type": "own"
+    },
+    {
+      "role": "vendor",
+      "permission": "invoice.view_own",
+      "access_type": "own"
+    },
+    {
+      "role": "vendor",
+      "permission": "invoice.download_pdf",
+      "access_type": "own"
+    },
+    {
+      "role": "vendor",
+      "permission": "contract.view_own",
+      "access_type": "own"
+    },
+    {
+      "role": "vendor",
+      "permission": "report.own",
+      "access_type": "own"
+    },
+    {
+      "role": "vendor",
+      "permission": "message.reply_own",
+      "access_type": "own"
+    }
+  ],
+  "user_permission_overrides": [],
+  "security_violations": [],
+  "approval_authority": [
+    {
+      "id": 1,
+      "user_id": 3,
+      "level": 3,
+      "max_amount": 5000000,
+      "is_active": 1,
+      "granted_by": 1,
+      "granted_at": "2026-01-01T00:00:00Z"
+    },
+    {
+      "id": 2,
+      "user_id": 4,
+      "level": 2,
+      "max_amount": 1000000,
+      "is_active": 1,
+      "granted_by": 1,
+      "granted_at": "2026-01-01T00:00:00Z"
+    }
+  ],
+  "temporary_access": []
+}
