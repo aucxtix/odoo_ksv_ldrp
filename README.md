@@ -10,7 +10,7 @@
 
 ---
 ## 🚀Run the live demo website:🚀
-   https://vendorbridge-erp-567448632348.asia-southeast1.run.app/
+   https://your-app-url.run.app/
    
 ## 🌟 The Vision
 
