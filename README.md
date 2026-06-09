@@ -1,8 +1,6 @@
 <div align="center">
   
-  <img src="https://img.shields.io/badge/Status-Hackathon%20Winning%20Ready-brightgreen?style=for-the-badge" alt="Status" />
-  <img src="https://img.shields.io/badge/AI-Gemini%20Powered-blue?style=for-the-badge" alt="AI Agent" />
-  <img src="https://img.shields.io/badge/Tech-React%20%2B%20Node.js-informational?style=for-the-badge" alt="Tech Stack" />
+
 
   <h1>🚀 VendorBridge ERP</h1>
   <p><strong>Transforming Enterprise Procurement Through Smart AI Insights & Unified Supplier Workflows.</strong></p>
