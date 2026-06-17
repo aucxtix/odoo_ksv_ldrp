@@ -7,7 +7,7 @@
 </div>
 
 ---
-## 🚀Run the live demo website:🚀
+## 🚀Run the live demo website:
 (https://vendorbridge-erp-567448632348.asia-southeast1.run.app/)   
 ## 🌟 The Vision
 
