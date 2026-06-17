@@ -11,7 +11,7 @@
 (https://vendorbridge-erp-567448632348.asia-southeast1.run.app/)   
 ## 🌟 The Vision
 
-VendorBridge ERP solves one of the biggest bottlenecks in modern enterprise operations: fractured, opaque, and slow supplier procurement cycles. 
+VendorBridge ERP solves one of the biggest bottlenecks in modern enterprise operations: fractured, opaque, and slow supplier procurement cycles.
 
 We built VendorBridge to unify **Vendor Registrations, Requests for Quotations (RFQs), Multi-Level Bidding, Purchase Orders (POs), and Approvals** into a seamless, high-performance gateway augmented by **Generative AI Copilot Recommendations**. 
 
